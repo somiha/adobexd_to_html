@@ -1,0 +1,236 @@
+@import url('http://fonts.cdnfonts.com/css/segoe-ui-4');
+@import url('http://fonts.cdnfonts.com/css/times-new-roman');
+@import url('http://fonts.cdnfonts.com/css/arial');
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+body{
+    text-align: center;
+    background: #EFEFEF;
+    width: 100%;
+}
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: montserrat;
+}
+nav{
+  background: #fff;
+  height: 80px;
+  width: 100%;
+}
+.logo{
+  float: left;
+  color: white;
+}
+.logo img{
+  padding-top: 15px;
+    padding-left: 25px;
+  width: 55%;
+}
+.logo p{
+    margin-top: -25px;
+    margin-right: -190px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #707070;
+    font-size: 15px;
+}
+nav .a{
+  float: right;
+  margin-right: 20px;
+}
+nav .a p{
+    margin: 25px 50px; 
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 20px;
+    color: #0A0909;
+}
+nav .a li{
+  display: flex;
+ 
+  margin: 5px 20px;
+}
+nav .a li a{
+  text-decoration: none;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+    color: #000;
+}
+nav .tooltip{
+    position: absolute;
+    transform: rotate(45deg);
+    display: none;
+}
+nav .tooltip.show{
+    display: block;
+}
+nav .wrapper{
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    background: #fff;
+    display: none;
+    transition: all 0.3s ease;
+    width: 515px;
+    height: 500px;
+    color: #2A2727;
+    font-size: 18px;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 2rem;
+    z-index: 1;
+    
+}
+nav .wrapper h6{
+    color: #2A2727;
+    font-size: 25px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: normal;
+    line-height: 0.5rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+ nav .wrapper.show{
+    display: block;
+    display: flex;
+}
+.wrapper ul{
+    list-style: none;
+}
+.wrapper ul li a{
+    position: relative;
+    color: #000 ;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0 10px;
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    text-decoration: none;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+ul #change-img{
+  width: 16px;
+}
+.dashboard{
+    background: #fff;
+    width: 79%;
+    margin: 40px auto;
+    min-height: 250px;
+    padding: 30px 1px;
+    border: 1px solid #000;
+    margin-left: 150px;
+}
+.dashboard h3{
+    font-weight: 300;
+    font-family: "Arial Black", Arial, sans-serif;
+    color: #0A0909;
+    font-size: 24px;
+    text-align: center;
+}
+.dashboard table{
+    width: 80%;
+    color: #27BC80;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+.dashboard tr{
+    height: 35px;
+}
+.dashboard tr:nth-child(1){
+    border: 1px solid #000;
+    padding: 20px;
+    margin: 0 auto;
+}
+.dashboard form{
+    margin: 0 auto;
+    text-align: center;
+}
+.dashboard form #email{
+    width: 65%;
+}
+.dashboard input{
+    padding: 10px;
+}
+.dashboard input[type=submit]{
+    color: #fff;
+    background-color: #000;
+    width: 100px;
+    height: 36px;
+    font-family: 'Arial', sans-serif;
+    margin-left: 15px;
+}
+.dashboard ::placeholder{
+    color: #27BC80;
+}
+.dashboard p{
+    color: #27BC80;
+    margin: 10px 115px;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+}
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100vw;
+}
+
+.footer-bottom{
+    background: #fff;
+    width: 100vw;
+    padding: 50px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 18px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    color: #0A0909;
+    font-family: 'Segoe UI', sans-serif;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+@media only screen and (min-width:200px) and (max-width:991px){
+    .inner_hero .dashboard {width: 97%;margin: 54px;min-height: 250px;padding: 30px 1px;margin-left: 0px;margin-top: 100px;}
+    .inner_hero .dashboard table {width: 230px;}
+    .inner_hero .dashboard form #email {width: 130px;}
+    .inner_hero .dashboard p {width: 190px;margin: 30px auto;text-align: center;}
+}

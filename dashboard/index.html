@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="box-area">
+  <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <div class="logo">
+        <img src="image/logo.png" alt="">
+        <p>Registration Form</p>
+      </div>
+      <div class="a">
+        <div class="drop-btn" onclick="chngimg()" >
+        <p>Contact Us (العربية and English)<span ><img id="change-img" src="image/up.png" alt=""></span></p>
+        </div>
+                                     <div class="tooltip"></div>
+                             <div class="wrapper">
+                                <ul class="menu-bar">
+                                   <li><a href="#"><h6>Call us</h6></a></li>
+                                   <li><a href="#">Contact Us 24/7</a></li>
+                                   <li><a href="#">+000 0000 0008</a></li>
+                                   <li><a href="#">
+                                        الأحد إلى الخميس 9:00 ص إلى 8:00 م الإمارات</a></li> 
+                                        <li><a href="#">+000 0000 0008</a></li>
+                                        <li><a href="#">+24/7 Support UK</a></li>
+                                        <li><a href="#">+000 0000 0008</a></li>
+                                        <li><a href="#">
+                                        الأحد إلى الخميس 9:00 ص إلى 8:00 م الإمارات</a></li> 
+                                        <li><a href="#">+000 0000 0008</a></li>
+                                        <li><a href="#">24/7 Support US</a></li>
+                                        <li><a href="#">+000 0000 0008</a></li>
+                                        <li><a href="#">
+                                        الأحد إلى الخميس 9:00 ص إلى 8:00 م الإمارات</a></li> 
+                                        <li><a href="#">+000 0000 0008</a></li>
+                                </ul>
+          </div>
+      </div>
+    </nav>
+
+</div>
+
+<div class="hero_area">
+       <div class="inner_hero container">
+           <div class="dashboard">
+           <h3>Registered Accounts</h3>
+            <table>
+                <tr>
+                    <th>Name or Customer Number</th>
+                    <th>Phone Number</th>
+                    <th>Automatic Account delete</th>
+                    <th>Registered on</th>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>+00000000000</td>
+                    <td>Yes</td>
+                    <td>05 May 2021</td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>+00000000000</td>
+                    <td>Yes</td>
+                    <td>05 May 2021</td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>+00000000000</td>
+                    <td>Yes</td>
+                    <td>05 May 2021</td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>+00000000000</td>
+                    <td>Yes</td>
+                    <td>05 May 2021</td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>+00000000000</td>
+                    <td>Yes</td>
+                    <td>05 May 2021</td>
+                </tr>
+            </table>
+            <form action="#">
+                    <input type="email" id="email" name="email" placeholder="email@email.com">
+                    <input type="submit" value="SAVE">
+            </form>
+            <p>Add email addresses to notify when a new account is registered</p>
+        </div>
+       </div>
+   </div>
+
+    <footer>
+
+        <div class="footer-bottom">
+            <p>Copyright © 1999 - 2021 Class Registration LLC. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="main.js">
+
+    </script>
+    <script type="text/javascript">
+      var Form1 = document.getElementById("Form1");
+      var Form2 = document.getElementById("Form2");
+      var Form3 = document.getElementById("Form3");
+
+      var Next1 = document.getElementById("Next1");
+      var Next2 = document.getElementById("Next2");
+
+      var progress = document.getElementById("progress");
+
+      Next1.onclick = function(){
+        var name = document.getElementById("name1");
+        var phonenumber = document.getElementById("phonenumber1");
+        console.log(name);
+        if (name.value === "" || phonenumber.value === ""){
+          alert('Fill all the fields');
+        }
+        else{
+          Form1.style.left = "-450px";
+          Form2.style.left = "40px";
+        }
+
+      }
+      Next2.onclick = function(){
+        var name = document.getElementById("name2");
+        var phonenumber = document.getElementById("phonenumber2");
+        if (name.value === "" || phonenumber.value === ""){
+          alert('Fill all the fields');
+        }
+        else{
+          Form2.style.left = "-450px";
+          Form3.style.left = "40px";
+        }
+
+      }
+
+      Next3.onclick = function(event){
+          event.preventDefault();
+          Form3.style.left = "-450px";
+          Form4.style.left = "40px";
+      }
+
+
+    </script>
+
+    <script language="javascript" type="text/javascript">
+        function myFunction() {
+            var x = document.getElementById("sub-part");
+            if (x.innerHTML === "Automatic account purge disabled") {
+                x.innerHTML = "Your account is set to delete all information,associated with it, in 30 days.";
+                x.style.color="red";
+            } else {
+                x.innerHTML = "Automatic account purge disabled";
+                x.style.color="#27BC80";
+            }
+        }
+    </script>
+
+    <script language="javascript" type="text/javascript">
+        function chngimg() {
+            var img = document.getElementById('change-img').src;
+            if (img.indexOf('up.png')!=-1) {
+                document.getElementById('change-img').src  = 'image/down.png';
+            }
+             else {
+               document.getElementById('change-img').src = 'image/up.png';
+           }
+
+        }
+    </script>
+</body>
+</html>
